@@ -4,7 +4,7 @@
 
 ![Comparison Operators](./images/image-3.png)
 
-compare two values and evaluate down to a single Boolean value
+Compare two values and evaluate down to a single Boolean value
 
 ## Difference Between the ``==`` and ``=``
 
