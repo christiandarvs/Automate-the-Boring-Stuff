@@ -1,3 +1,4 @@
 {
     "notebook.output.wordWrap": true,
+    "python.analysis.autoFormatStrings": true,
 }
