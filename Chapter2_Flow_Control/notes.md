@@ -16,6 +16,23 @@ Compare two values and evaluate down to a single Boolean value
 
 ![AND OPERATOR](./images/image.png)
 
-![Alt text](./images/image-1.png)
+![OR OPERATOR](./images/image-1.png)
 
-![Alt text](./images/image-2.png)
+![NOT OPERATOR](./images/image-2.png)
+
+## If Statement
+
+- An if statement’s clause (that is, the block following the if statement) will execute if the statement’s condition is True. The clause is skipped if the
+condition is False.
+- “If this condition is true, execute the code in the
+clause.”
+
+## Else Statement
+
+- The else clause is executed only when the if statement’s condition is False.
+- “If this condition is true, execute this code. Or else, execute that code.”
+
+## Elif Statement
+
+- The elif statement is an “else if” statement that always follows an if or another
+elif statement. It provides another condition that is checked only if all of the previous conditions were False.
