@@ -52,3 +52,10 @@ variable.
 
 ## Exception Handling
 - You want the program to detect errors, handle them, and then continue to run.
+
+## Summary:
+- Functions are a great tool to help you organize your code. You can think of
+them as black boxes: they have inputs in the form of parameters and outputs in
+the form of return values, and the code in them doesn’t affect variables in other
+functions.
+- ``try`` and ``expect`` statements can run code when an error has been detected.
