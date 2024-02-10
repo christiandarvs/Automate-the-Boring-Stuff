@@ -23,3 +23,17 @@
 ## Removing Values from Lists with ``del`` Statements
 - The del statement will delete values at an index in a list. All of the values in the list after the deleted value
 will be moved up one index.
+- ``del`` ``list_name[index]``
+
+## Using for Loops with Lists
+- A common Python technique is to use ``range(len(someList))`` with a for loop to iterate over the indexes of a list.
+- Using ``range(len(supplies))`` in the previously shown for loop is handy because the code in the loop can access the index (as the variable ``i``) and the value at that index (as supplies``[i]``). Best of all, ``range(len(supplies))``
+will iterate through all the indexes of supplies, no matter how many items it contains.
+
+## The ``in`` and ``not`` in operators
+- You can determine **whether a value is or isn’t in a list** with the ``in`` and ``not in`` operators. 
+- Like other operators, in and not in are used in expressions and connect two values: a value to look for in a list and the list where it may be found. 
+- These expressions will evaluate to a **Boolean value**.
+
+## Multiple Assignment Trick
+- Technically called ***tuple unpacking*** is a shortcut that lets you assign multiple variables with the values in a list in one line of code
