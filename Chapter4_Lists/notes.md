@@ -82,3 +82,25 @@ means **uppercase letters come before lowercase letters**. Therefore, the lowerc
 **after** the uppercase Z.
 - **Note 3**: If you need to sort the values in regular alphabetical order, pass ``str.lower`` for the key keyword argument in
 the ``sort()`` method call
+
+## Reversing the Values in a List with the ``reverse()`` Method
+- Like the sort() list method, ``reverse()`` doesn’t return a list. This is why you write ``spam.reverse()``, instead of ``spam = spam.reverse()``
+
+## Tuple Data Type
+- It is enclosed with `()`, instead of `[]`
+- Tuples **CANNOT** have their values **modified**, **appended**, or **removed**.
+
+## Converting Types with the ``list()`` and ``tuple()`` Functions
+- You **need to reassign** the variable in order to convert it into list or tuple.
+
+## References
+- Variables in Python **hold references to objects**, **NOT** the objects themselves.
+- Lists are mutable, so changes made through one reference will affect all other references to the same list.
+
+![alt text](./images/image.png)
+![alt text](./images/image-1.png)
+![alt text](./images/image-2.png)
+
+## Identity and the ``id()`` Function
+- ``id()`` - returns the "identity" of an object. This identity is a unique integer that is assigned to the object when it is created. 
+- It is guaranteed to be **unique and constant throughout the lifetime** of the object.
