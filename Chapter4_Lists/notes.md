@@ -104,3 +104,17 @@ the ``sort()`` method call
 ## Identity and the ``id()`` Function
 - ``id()`` - returns the "identity" of an object. This identity is a unique integer that is assigned to the object when it is created. 
 - It is guaranteed to be **unique and constant throughout the lifetime** of the object.
+- **Shallow copy**:
+    - You work with simple data structures or immutable objects.
+    - You don't intend to modify the nested objects independently.
+    - Performance is a major priority.
+- **Deep copy**:
+    - You have complex, nested data structures.
+    - You must ensure changes in the copy won't affect the original.
+
+| Key takeaways  | Shallow copy  | Deep copy  |
+|---|---| --- |
+| Creates new objects  | Yes  | Yes  |
+| Copies nested objects  | By reference  | Recursively |
+| Changes in copy affect original  | Yes  | No  |
+| Use case  | Simple data, performance  | Complex data, independence  |
