@@ -29,3 +29,23 @@ return if that key does not exist**.
 - **2nd argument**: is the value to set at that key if the key doesn't exist.
 - If the key does exist, the ``setdefault()`` method returns the key’s value.
 - The ``setdefault()`` method is a nice shortcut **to ensure that a key exists**.
+
+## Pretty Printing - (**Module**)
+- If you import the ``pprint`` module into your programs, you’ll have access
+to the ``pprint()`` and ``pformat()`` functions that will “pretty print” a
+dictionary’s values. This is helpful when you want a cleaner display of the items in a dictionary than what ``print()`` provides.
+- The ``pprint.pprint()`` function is especially helpful when the dictionary
+itself contains **nested lists or dictionaries**.
+- If you want to obtain the **prettified text as a string value** instead of
+displaying it on the screen, call ``pprint.pformat()`` instead.
+
+## Nested Dictionaries and Lists
+- Lists are useful to contain an **ordered series of values**, and dictionaries are useful for **associating keys with values**.
+- Inside the loop, the string of the guest’s name is assigned to ``key``, and the **dictionary of picnic items** they’re bringing is assigned to ``value``. If the item parameter exists as a key in this dictionary, its value (the quantity) is added to ``numBrought``. If it does not exist as a key, the ``get()`` method **returns 0** to be added to ``numBrought``.
+- **Explanation**: This may seem like such a simple thing to model that you wouldn’t need to bother with writing a program to do it. But realize that this
+same ``total_brought()`` function could easily handle a dictionary that contains thousands of guests, each bringing thousands of different picnic items. Then having this information in a data structure along with the ``total_brought()`` function would save you a lot of time!
+
+## Summary:
+- Lists and dictionaries are data types that can contain multiple values, including other lists and dictionaries.
+- Dictionaries are useful because **you can map one item (the key) to another (the value)**.
+- Values inside a dictionary are accessed using square brackets just as with lists. Instead of an integer index, **dictionaries can have keys of a variety of data types: integers, floats, strings, or tuples.**
