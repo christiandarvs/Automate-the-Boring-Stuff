@@ -26,6 +26,28 @@
 - can be used with strings just like with list values. An expression with two strings joined using in or not in will evaluate to a Boolean ``True`` or ``False``
 - These expressions test whether the first string (**the exact string**, **case-sensitive**) can be found within the second string.
 
-## ``f-string``
-- Common operation in programming
+## ``f-string (string-interpolation)``
+- Common operation in programming, used for concatenation
 - ``print(f'User Name: {variable_name}')``
+
+## ``upper()`` and ``lower()``
+- The upper() and lower() string methods return a new string where all the letters in the original string have been converted to **uppercase or lowercase**, respectively.
+
+## ``isupper()`` and ``islower()``
+- The ``isupper()`` and ``islower()`` methods will return a Boolean ``True`` value if the string has **at least one letter** and **all the letters are uppercase or lowercase**, respectively.
+
+## ``isX()`` Methods
+- ``isalpha()``: Returns True if the string consists only of letters and isn’t blank
+- ``isalnum()``: Returns True if the string consists only of letters and numbers and is not blank
+- ``isdecimal()``: Returns True if the string consists only of numeric characters and is not blank
+- ``isspace()``: Returns True if the string consists only of spaces, tabs, and newlines and is not blank
+- ``istitle()``: Returns True if the string consists only of words that begin with an uppercase letter followed by
+only lowercase letters
+- helpful when you need to validate user input.
+
+## ``startswith()`` and ``endswith()``: **case-sensitive**
+- The ``startswith()`` and ``endswith()`` methods return ``True`` if the string value they are called on **begins or ends (respectively) with the string passed to the method**; otherwise, they return ``False``.
+
+## ``join()`` and ``split()``
+- The ``join()`` method is useful when you have a list of strings that need to be joined together into a single string value.
+- called on a string, gets passed a list of strings, and returns a string. The returned string is the concatenation of each string in the passed-in list
