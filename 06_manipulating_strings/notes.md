@@ -50,4 +50,9 @@ only lowercase letters
 
 ## ``join()`` and ``split()``
 - The ``join()`` method is useful when you have a list of strings that need to be joined together into a single string value.
-- called on a string, gets passed a list of strings, and returns a string. The returned string is the concatenation of each string in the passed-in list
+- called on a string, gets passed a list of strings, and returns a string. The **returned string is the concatenation of each string in the passed-in list**
+- The ``split()`` method does the opposite: It’s called on a string value and **returns a list of strings**.
+
+## Splitting Strings with the ``partition()`` Method
+- can split a string into the text **before** and **after** a separator string. 
+- This method searches the string it is called on for the separator string it is passed, and returns a tuple of three substrings for the **“before,” “separator,”** and **“after”** substrings.
