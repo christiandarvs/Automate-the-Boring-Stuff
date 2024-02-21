@@ -56,3 +56,13 @@ only lowercase letters
 ## Splitting Strings with the ``partition()`` Method
 - can split a string into the text **before** and **after** a separator string. 
 - This method searches the string it is called on for the separator string it is passed, and returns a tuple of three substrings for the **“before,” “separator,”** and **“after”** substrings.
+- The ``partition()`` method is useful for **splitting a string** whenever you need the parts **before, including, and after a particular separator string**.
+
+## ``rjust()``, ``ljust()``, and ``center()``
+- The ``rjust()`` and ``ljust()`` string methods return a padded version of the string they are called on, with spaces inserted to justify the text.
+- The ``center()`` - centers the text rather than justifying it to
+the left or right.
+- **1st Parameter**: is an integer length for the justified string.
+- **2nd Parameter** (Optional): will specify a fill character other than a space character.
+- These methods are especially useful when you need to print tabular data that has correct spacing.
+
