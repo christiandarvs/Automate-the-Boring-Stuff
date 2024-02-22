@@ -67,3 +67,11 @@ the left or right.
 - These methods are especially useful when you need to print tabular data that has correct spacing.
 
 ## ``rstrip()``, ``lstrip()``, and ``strip()``
+- The ``strip()`` string method will return a new string **without any whitespace characters at the beginning or end**. 
+- The ``lstrip()`` and ``rstrip()`` methods will **remove whitespace characters from the left and right ends**, respectively.
+
+## Numberic Values of Characters: ``ord()`` and ``chr()``
+- Every text character **has a corresponding numeric value** called a **Unicode code point**.
+- ``ord()`` - get the code point of a one-character string
+- ``chr()`` - get the one-character string of an integer code point
+
