@@ -66,3 +66,4 @@ the left or right.
 - **2nd Parameter** (Optional): will specify a fill character other than a space character.
 - These methods are especially useful when you need to print tabular data that has correct spacing.
 
+## ``rstrip()``, ``lstrip()``, and ``strip()``
