@@ -7,5 +7,17 @@ TEXT = {
 
 import sys
 
+import pyperclip
+
 if len(sys.argv) < 2:
-    print(f'Usage: ')
+    print(f"Usage: python mclip.py [keyphrase] - copy phrase text")
+    sys.exit()
+
+keyphrase = sys.argv[1]
+
+if keyphrase in TEXT:
+    pyperclip.copy(TEXT[keyphrase])
+    print(f"Text for '{keyphrase}' copied to clipboard.")
+    print(f"Check your clipboard: {pyperclip.paste()}")
+else:
+    print(f"There is no text for {keyphrase}")
