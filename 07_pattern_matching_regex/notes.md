@@ -17,3 +17,21 @@ regex stands for a digit character—that is, any single numeral from 0 to 9.
 ## Matching Multiple Groups with the Pipe
 - The ``|`` character is called a **pipe**. You can use it anywhere you want to match one of many expressions. For
 example, the regular expression`` r'Batman|Tina Fey'`` will match either ``'Batman'`` or ``'Tina Fey'``.
+
+## Optional Matching with the Question Mark ``?``
+- The ``?`` character flags the group that precedes it as an **optional part of the pattern**.
+- The ``(wo)?`` part of the regular expression means that the **pattern wo is an optional group**. The regex will match text that has zero instances or one instance of wo in it. This is why the regex matches both ``'Batwoman'`` and ``'Batman'``.
+- Using the earlier phone number example, you can make the regex look for phone numbers that do or do not have an area code.
+- You can think of the ``?`` as saying, “**Match zero or one of the group preceding this question mark**.” If you need to match an actual question mark character, escape it with ``\?``.
+
+## Matching Zero or More with the Star
+- The ``*`` (called the star or asterisk) means “**match zero or more**”—the group that precedes the star can occur any number of times in the text. It can be completely absent or repeated over and over again.
+- If you need to match an actual star character, prefix the star in the regular expression with a backslash,``\*``.
+
+## Matching One or More with the Plus
+- While ``*`` means “**match zero or more**,” the ``+`` (or plus) means “**match one or more**.” Unlike the star, which does not require its group to appear in the matched string, the group preceding a plus **must appear at least once. It is not optional.**
+- The regex Bat(wo)+man will not match the string 'The Adventures of Batman', because at least one wo is required by the plus sign.
+- If you need to match an actual plus sign character, prefix the plus sign with a backslash to escape it: ``\+``.
+
+## Matching Specific Repetitions with Braces
+- 
