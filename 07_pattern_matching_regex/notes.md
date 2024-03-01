@@ -34,4 +34,9 @@ example, the regular expression`` r'Batman|Tina Fey'`` will match either ``'Batm
 - If you need to match an actual plus sign character, prefix the plus sign with a backslash to escape it: ``\+``.
 
 ## Matching Specific Repetitions with Braces
-- 
+- The regex ``(Ha){3,5}`` will match '**HaHaHa**', '**HaHaHaHa**', and '**HaHaHaHaHa**'.
+- ``(Ha){3,}`` will **match three or more instances of the (Ha)** group, while ``(Ha){,5}`` will **match zero to five instances**. 
+- Braces can help make your regular expressions shorter.
+- A lot of use-cases
+
+## Greedy and Non-Greedy Matching
