@@ -40,3 +40,29 @@ example, the regular expression`` r'Batman|Tina Fey'`` will match either ``'Batm
 - A lot of use-cases
 
 ## Greedy and Non-Greedy Matching
+- Python’s regular expressions are **greedy by default**, which means that in ambiguous situations **they will
+match the longest string possible**.
+- The **non-greedy** (also called lazy) version of the braces, which matches the
+**shortest string possible**, has the closing brace followed by a question mark.
+- Question Mark has two meanings: **declaring a non-greedy match** or **flagging an optional group**.
+
+## ``findall()``
+- ``search()`` - match object of the **first matched text** in the searched string.
+- ``findall()`` - return the strings of **every match text** in the searched string.
+
+## Character Classes
+| Shorthand  | Represents  
+|---|---|
+| ``\d``  | Any numeric digit from **0 to 9**|
+| ``\D``  | Any character that is **not a numeric digit from 0 to 9**|
+| ``\w``  | Any letter, numeric digit, or underscore character. (**Matching "word" characters**)|
+| ``\W``  | Any space, tab, or newline character. (**Matching "space" characters**)|
+| ``\s``  | Any character that is not a space, tab, or newline|
+
+## Caret and Dollar Sign Characters ``(^, $)``
+- ``^`` - start of a regex to indicate that a **match must occur at the beginning of the searched text**.
+- ``$`` - end of a regex to indicate that a **match must occur at the end of the searched text**.
+- "Carrots cost dollars"
+
+## The Wildcard Character
+- The ``.`` **(or dot)** character in a regular expression is called a wildcard and will **match any character except for a newline**.
