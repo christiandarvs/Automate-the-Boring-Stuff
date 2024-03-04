@@ -66,3 +66,37 @@ match the longest string possible**.
 
 ## The Wildcard Character
 - The ``.`` **(or dot)** character in a regular expression is called a wildcard and will **match any character except for a newline**.
+
+## Matching Everything with Dot-Star
+- Dot character means **“any single
+character except the newline”**
+- Star character means **“zero or more of the preceding character.”**
+- **Note**: The dot-star uses greedy mode
+
+## Matching Newlines with the Dot Character
+- The dot-star will match everything except a newline.
+- ``re.compile(, re.DOTALL)`` - you can make the **dot character match all characters, including the newline character**
+
+| Symbol  | What it does  
+|---|---|
+| ``?``  | matches zero or one of the preceding group|
+| ``*``  | matches zero or more of the preceeding group|
+| ``+``  | matches one or more of the preceeding group|
+| ``{n}``  | matches exactly n of the preceeding group|
+| ``{n, m}?`` or ``{*?}`` or ``{+?}`` | performs a non-greedy match of the preceeding group|
+| ``^spam``  | means the string must begin with spam|
+| ``spam$``  | means the string must end with spam|
+| ``.``  | matches any character, except newline characters|
+| ``\d``,``\w``, ``\s``  | match a digit, word, or space character, respectively|
+| ``\D``,``\W``, ``\S``  | match anything except a digit, word, or space character, respectively|
+| ``[abc]``  | matches any character between the brackets (such as ***a, b, or c***)|
+| ``[^abc]``  | matches any character that is **not** between the brackets |
+
+## Case-Insensitive Matching
+- Sometimes you care only about matching the letters without worrying whether they’re uppercase or lowercase. 
+- To make your regex case-insensitive, you can pass ``re.IGNORECASE`` or ``re.I`` as a **second argument** to ``re.compile()``
+
+## Substituting Strings with the ``sub()``
+- **1st argument** - string to replace any matches
+- **2nd argument** - string for the RegEx."
+- It returns a string with substitutions applied.
