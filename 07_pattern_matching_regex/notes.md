@@ -100,3 +100,12 @@ character except the newline”**
 - **1st argument** - string to replace any matches
 - **2nd argument** - string for the RegEx."
 - It returns a string with substitutions applied.
+
+## Managing Complex RegExes
+- Regular expressions are fine if the **text pattern you need to match is simple**. 
+- Matching complicated text
+patterns **might require long, convoluted regular expressions**.
+- ``re.verbose()`` - function to ignore whitespace and comments inside the RegEx string.
+
+## Combining <ins>integer constants</ins> within the ``re`` module
+- ``some_regex_value = re.compile('foo', re.IGNORECASE | re.DOTALL | re.VERBOSE)``
