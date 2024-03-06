@@ -56,8 +56,10 @@ match the longest string possible**.
 | ``\d``  | Any numeric digit from **0 to 9**|
 | ``\D``  | Any character that is **not a numeric digit from 0 to 9**|
 | ``\w``  | Any letter, numeric digit, or underscore character. (**Matching "word" characters**)|
-| ``\W``  | Any space, tab, or newline character. (**Matching "space" characters**)|
-| ``\s``  | Any character that is not a space, tab, or newline|
+| ``\W``  | Any character that is not a letter, numeric digit, or the
+underscore character.|
+| ``\s``  | Any character that is a space, tab, or newline (**Matching "space" characters**)|
+| ``\S``  | Any character that is not a space, tab, or newline|
 
 ## Caret and Dollar Sign Characters ``(^, $)``
 - ``^`` - start of a regex to indicate that a **match must occur at the beginning of the searched text**.
