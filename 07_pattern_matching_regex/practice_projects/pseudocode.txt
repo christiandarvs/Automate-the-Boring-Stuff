@@ -1,0 +1,9 @@
+ask user for their password and save it on a variable
+create a function that checks whether their password is weak or strong:
+    - import the re module
+    - create a regex that has 8 =+ characters, contains both uppercase and lowercase, at least 1 digit
+    - pass the password to the function
+    - use the re.search or re.match
+    - return True or False
+
+
