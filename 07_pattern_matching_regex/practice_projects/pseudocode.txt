@@ -1,9 +1,16 @@
-ask user for their password and save it on a variable
-create a function that checks whether their password is weak or strong:
-    - import the re module
-    - create a regex that has 8 =+ characters, contains both uppercase and lowercase, at least 1 digit
-    - pass the password to the function
-    - use the re.search or re.match
-    - return True or False
+Strong Password Detection:
+    ask user for their password and save it on a variable
+    create a function that checks whether their password is weak or strong:
+        - import the re module
+        - create a regex that has 8 =+ characters, contains both uppercase and lowercase, at least 1 digit
+        - pass the password to the function
+        - use the re.search or re.match
+        - return True or False
 
+RegEx of the strip() method:
+    ask the user to input a word, phrase, sentence
+    create a function that will replicate what the strip() does
+        - import the re module
+        - if no argument is passed, then remove the whitespace characters at the end and beginning
+        - if there's an argument passed, then removed that from the text 
 
