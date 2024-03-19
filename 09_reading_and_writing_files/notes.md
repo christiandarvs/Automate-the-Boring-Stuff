@@ -20,3 +20,17 @@ second leftmost value must be a Path object for the entire expression to evaluat
 ## Create new folders - ``os.makedirs()``
 
 - Note that ``mkdir()`` can only make one directory at a time; it won’t make several subdirectories at once like ``os.makedirs()``.
+
+## ``os.path`` functions
+- ``os.path.abspath(path)`` - will return a string of the absolute path of the argument. This is an easy
+way to convert a relative path into an absolute one.
+- ``os.path.isabs(path)`` - will return True if the argument is an absolute path and False if it is a relative
+path.
+- ``os.path.relpath(path, start)`` will return a string of a relative path from the start path to path. If
+start is not provided, the current working directory is used as the start path
+
+## Parts of a File Path
+- **anchor** - the root folder of the filesystem
+- **drive** - the single letter that often denotes a physical hard drive
+- **parent** - the folder that contains the file
+- **name** - made up of the *stem* (base name) and the *suffix* (extension)
