@@ -34,3 +34,17 @@ start is not provided, the current working directory is used as the start path
 - **drive** - the single letter that often denotes a physical hard drive
 - **parent** - the folder that contains the file
 - **name** - made up of the *stem* (base name) and the *suffix* (extension)
+
+## ``os.path.split()``
+- nice shortcut if you need both values
+- does not take a file path and return a list of strings of each folder.
+- use the ``split()`` string method and split on the string in ``os.sep``. (Note that ``sep`` **is in** os, **not** ``os.path``) The ``os.sep``
+variable is set to the correct folder-separating slash for the computer running the program, '\\' on Windows
+
+## File Size and Folder Contents
+- ``os.path.getsize(path)`` - will return the size in **bytes** of the file in the path argument
+- ``os.listdir(path)`` - will return a list of filename strings for each file in the path argument. (Note that
+this function is in the os module, not os.path.)
+
+## Modify Files - Glob Patterns
+- 
