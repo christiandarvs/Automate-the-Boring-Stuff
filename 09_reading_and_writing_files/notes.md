@@ -45,6 +45,8 @@ variable is set to the correct folder-separating slash for the computer running 
 - ``os.path.getsize(path)`` - will return the size in **bytes** of the file in the path argument
 - ``os.listdir(path)`` - will return a list of filename strings for each file in the path argument. (Note that
 this function is in the os module, not os.path.)
+![alt text](images/image2.png)
+
 
 ## Modify Files - Glob Patterns
 - Glob patterns are like a
@@ -53,3 +55,11 @@ simplified form of regular expressions often used in command line commands.
 generator object (which are beyond the scope of this book) that you’ll need to pass to ``list()``
 - The asterisk ``(*)`` stands for “**multiple of any characters**,” so`` p.glob('*')`` returns a generator of all files in the
 path stored in p.
+- ``*.?x?`` - return files with any name and any three-character extension where the middle character is an **'x'**
+
+## Path Validity
+- ``p.exists()`` - returns True if the path exists or returns False if it doesn't exist
+- ``p.is_file()`` -returns True if the path exists and is a file, or returns False otherwise.
+- ``p.is_dir()`` - returns True if the path exists and is a directory, or returns False otherwise.
+
+## File Reading/Writing Process
