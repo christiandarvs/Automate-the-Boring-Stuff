@@ -47,4 +47,9 @@ variable is set to the correct folder-separating slash for the computer running 
 this function is in the os module, not os.path.)
 
 ## Modify Files - Glob Patterns
-- 
+- Glob patterns are like a
+simplified form of regular expressions often used in command line commands.
+- ``glob()`` method - returns a
+generator object (which are beyond the scope of this book) that you’ll need to pass to ``list()``
+- The asterisk ``(*)`` stands for “**multiple of any characters**,” so`` p.glob('*')`` returns a generator of all files in the
+path stored in p.
