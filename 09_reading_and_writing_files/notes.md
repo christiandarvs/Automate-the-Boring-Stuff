@@ -63,3 +63,8 @@ path stored in p.
 - ``p.is_dir()`` - returns True if the path exists and is a directory, or returns False otherwise.
 
 ## File Reading/Writing Process
+ 1. Call the ``open()`` function to return a File object.
+ 2. Call the ``read()`` or ``write()`` method on the File object.
+ 3. Close the file by calling the ``close()`` method on the File **object**.
+   
+The benefit of creating a .py file is that its contents can be read and modified by anyone with a text editor. However, for most applications, saving data using the shelve module is preferred. Only basic data types can be written as simple text, while objects like File objects cannot be encoded as text.
